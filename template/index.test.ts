@@ -13,10 +13,25 @@ describe("1", () => {
 
   describe("test", () => {
     it("run", async () => {
-      await run();
-      expect(true).toBeTruthy();
+      expect.assertions(1);
+      const result = await run(testList);
+      expect(result).toEqual(undefined);
     });
   });
-  describe.skip("first", () => {});
-  describe.skip("second", () => {});
+
+  describe.skip("first", () => {
+    it("run", async () => {
+      expect.assertions(1);
+      const result = await run(list);
+      expect(result).toEqual(undefined);
+    });
+  });
+
+  describe.skip("second", () => {
+    it("run", async () => {
+      expect.assertions(1);
+      const result = await run(list);
+      expect(result).toEqual(undefined);
+    });
+  });
 });
