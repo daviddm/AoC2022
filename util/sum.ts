@@ -1,2 +1,1 @@
-export const sum = (list: number[]) =>
-  list.reduce((prev, curr) => prev + curr, 0);
+export const sum = (total: number, curr: number) => total + curr;

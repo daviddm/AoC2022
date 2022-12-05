@@ -8,7 +8,7 @@ describe("sum", () => {
 
   it("should return 6", async () => {
     expect.assertions(1);
-    const result = sum(list);
+    const result = list.reduce(sum, 0);
     expect(result).toBe(6);
   });
 });
