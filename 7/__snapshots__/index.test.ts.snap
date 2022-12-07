@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`7 first structure 1`] = `
+{
+  "directories": [
+    {
+      "directories": [
+        {
+          "directories": [],
+          "files": [
+            {
+              "name": "i",
+              "size": 584,
+            },
+          ],
+          "name": "e",
+          "parent": [Circular],
+          "size": 0,
+        },
+      ],
+      "files": [
+        {
+          "name": "f",
+          "size": 29116,
+        },
+        {
+          "name": "g",
+          "size": 2557,
+        },
+        {
+          "name": "h.lst",
+          "size": 62596,
+        },
+      ],
+      "name": "a",
+      "parent": [Circular],
+      "size": 0,
+    },
+    {
+      "directories": [],
+      "files": [
+        {
+          "name": "j",
+          "size": 4060174,
+        },
+        {
+          "name": "d.log",
+          "size": 8033020,
+        },
+        {
+          "name": "d.ext",
+          "size": 5626152,
+        },
+        {
+          "name": "k",
+          "size": 7214296,
+        },
+      ],
+      "name": "d",
+      "parent": [Circular],
+      "size": 0,
+    },
+  ],
+  "files": [
+    {
+      "name": "b.txt",
+      "size": 14848514,
+    },
+    {
+      "name": "c.dat",
+      "size": 8504156,
+    },
+  ],
+  "name": "/",
+  "parent": [Circular],
+  "size": 0,
+}
+`;
+
+exports[`7 test create dir 1`] = `
+{
+  "directories": [
+    {
+      "directories": [],
+      "files": [],
+      "name": "a",
+      "parent": [Circular],
+      "size": 0,
+    },
+  ],
+  "files": [],
+  "name": "/",
+  "parent": [Circular],
+  "size": 0,
+}
+`;
+
+exports[`7 test create dir with file in 1`] = `
+{
+  "directories": [
+    {
+      "directories": [],
+      "files": [
+        {
+          "name": "b.txt",
+          "size": 14848515,
+        },
+      ],
+      "name": "a",
+      "parent": [Circular],
+      "size": 0,
+    },
+  ],
+  "files": [],
+  "name": "/",
+  "parent": [Circular],
+  "size": 0,
+}
+`;
+
+exports[`7 test create file 1`] = `
+{
+  "directories": [],
+  "files": [
+    {
+      "name": "b.txt",
+      "size": 14848514,
+    },
+  ],
+  "name": "/",
+  "parent": [Circular],
+  "size": 0,
+}
+`;
+
+exports[`7 test find folders 1`] = `
+[
+  {
+    "directories": [
+      {
+        "directories": [],
+        "files": [
+          {
+            "name": "b.txt",
+            "size": 1337,
+          },
+        ],
+        "name": "a",
+        "parent": [Circular],
+        "size": 0,
+      },
+    ],
+    "files": [],
+    "name": "/",
+    "parent": [Circular],
+    "size": 0,
+  },
+  {
+    "directories": [],
+    "files": [
+      {
+        "name": "b.txt",
+        "size": 1337,
+      },
+    ],
+    "name": "a",
+    "parent": {
+      "directories": [
+        [Circular],
+      ],
+      "files": [],
+      "name": "/",
+      "parent": [Circular],
+      "size": 0,
+    },
+    "size": 0,
+  },
+]
+`;
