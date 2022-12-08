@@ -2,13 +2,13 @@ import { readFile } from "@util/readFile";
 import { stringToNumber } from "@util/stringToNumber";
 import { run } from "./";
 
-describe("1", () => {
-  let list: number[];
-  let testList: number[];
+describe("today", () => {
+  let list: string[];
+  let testList: string[];
 
   beforeEach(async () => {
-    list = stringToNumber(await readFile("./1/input.txt"));
-    testList = stringToNumber(await readFile("./1/test.txt"));
+    list = await readFile(`${__dirname}/input.txt`);
+    testList = await readFile(`${__dirname}/test.txt`);
   });
 
   describe("test", () => {
