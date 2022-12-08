@@ -32,7 +32,7 @@ describe("1", () => {
     it("run", async () => {
       expect.assertions(1);
       const calories = await run(list);
-      const result = sum(calories.slice(0, 3));
+      const result = calories.slice(0, 3).reduce(sum, 0);
       expect(result).toEqual(200945);
     });
   });
